@@ -7,6 +7,9 @@ body {
   margin: 0;
 }
 
+main{
+  padding: 36px;
+}
 .header {
   display: flex;
   align-items: center;
@@ -17,7 +20,7 @@ body {
 
 .header--image {
   height: 100%;
-  margin-right: 6px ;
+  margin-right: 6px;
 }
 
 .header--title {
@@ -28,5 +31,28 @@ body {
 .header--project {
   font-size: 0.75rem;
   font-weight: 500;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);  color: white;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
